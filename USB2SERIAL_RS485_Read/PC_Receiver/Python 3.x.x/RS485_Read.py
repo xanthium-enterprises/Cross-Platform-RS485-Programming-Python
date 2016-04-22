@@ -96,7 +96,7 @@ print('    Data bits = ',COM_Port.bytesize)
 print('    Parity    = ',COM_Port.parity)
 print('    Stop bits = ',COM_Port.stopbits)
 
-#Controlling DTR and RTS pins to put USB2SERIAL in transmit mode
+#Controlling DTR and RTS pins to put USB2SERIAL in Receive mode
 
 COM_Port.setRTS(1) #RTS=1,~RTS=0 so ~RE=0,Receive mode enabled for MAX485
 COM_Port.setDTR(1) #DTR=1,~DTR=0 so  DE=0,(In FT232 RTS and DTR pins are inverted)
